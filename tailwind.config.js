@@ -5,8 +5,8 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    container: {
-     
+    container:{
+      
     },
     screens: {
       sm: '640px',

@@ -4,17 +4,18 @@ import MenuBar from "./MenuBar";
 import SearchBar from "./SearchBar";
 
 import {RiUserLine} from "react-icons/ri";
+import Banner from "../Banner/Banner";
 
 function Navbar() {
   return (
     <>
-      <div className="container mx-auto  sm:px-32  ">
-        <div className="flex justify-evenly  sm:gap-4   md:gap-16 lg:gap-24 mt-7 mb-5 ">
+      <div className=" container mx-auto  ">
+        <div className="flex justify-around lg:justify-between px-10 md:px-0  items-center  mt-7 mb-5 ">
           <div>
             <h1 className="font-bold text-3xl ">pti.</h1>
           </div>
           {/* search bar and menu select */}
-          <div className="flex gap-2  items-center">
+          <div className="flex gap-2  items-center px-4">
             <SearchBar />
             <MenuBar />
           </div>
