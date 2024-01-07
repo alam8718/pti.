@@ -29,6 +29,17 @@ export const AppProvider = ({children}) => {
     console.log(food);
   }, []);
 
+  // modal functions
+  const openModal = () => {
+    console.log("open modal clicked");
+    console.log(showModal);
+    setShowModal(true);
+  };
+  const closeModal = () => {
+    console.log("close modal clicked");
+    setShowModal(false);
+  };
+
   //finding popular food items
   useEffect(() => {
     const popularFoodItems = food.filter((item) => item.IsPopular);
@@ -38,11 +49,17 @@ export const AppProvider = ({children}) => {
     setRecommendedItems(recommendedItems);
   }, [food]);
 
-  //finding recommended items
-  // useEffect(() => {}, [food]);
-
   return (
-    <AppContext.Provider value={{popularItems, recommendedItems}}>
+    <AppContext.Provider
+      value={{
+        food,
+        setFood,
+        popularItems,
+        recommendedItems,
+        showModal,
+        openModal,
+        closeModal,
+      }}>
       {children}
     </AppContext.Provider>
   );

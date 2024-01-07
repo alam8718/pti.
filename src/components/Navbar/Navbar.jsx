@@ -12,7 +12,9 @@ function Navbar() {
       <div className="  ">
         <div className="flex justify-around lg:justify-between px-10 md:px-0  items-center  mt-7 mb-5 ">
           <div>
-            <h1 className="font-bold text-3xl ">pti.</h1>
+            <a href="#" className="font-extrabold text-3xl ">
+              pti.
+            </a>
           </div>
           {/* search bar and menu select */}
           <div className="flex gap-2  items-center px-4">
