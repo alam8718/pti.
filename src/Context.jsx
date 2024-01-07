@@ -16,7 +16,7 @@ export const AppProvider = ({children}) => {
           "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
         );
         const data = await response.json();
-        if (response.ok) {
+        if (data.Items) {
           setFood(data.Items);
         } else {
           setFood([]);
