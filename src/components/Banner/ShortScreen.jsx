@@ -3,7 +3,7 @@ import React from "react";
 function ShortScreen({bannerImg}) {
   return (
     <>
-      <div className="mt-[54px]">
+      <div className="mt-[54px] my-20">
         <div className="mb-[80px] sm:hidden flex flex-col gap-7 justify-center items-center w-full ">
           <div className="w-[400px] text-black text-3xl font-semibold text-center ">
             <h1>Deliver Food To Your Door Step|</h1>

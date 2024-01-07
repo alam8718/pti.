@@ -9,7 +9,7 @@ import Banner from "../Banner/Banner";
 function Navbar() {
   return (
     <>
-      <div className=" container mx-auto  ">
+      <div className="  ">
         <div className="flex justify-around lg:justify-between px-10 md:px-0  items-center  mt-7 mb-5 ">
           <div>
             <h1 className="font-bold text-3xl ">pti.</h1>

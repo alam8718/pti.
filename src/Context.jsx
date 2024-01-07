@@ -33,15 +33,13 @@ export const AppProvider = ({children}) => {
   useEffect(() => {
     const popularFoodItems = food.filter((item) => item.IsPopular);
     setPopularItems(popularFoodItems);
-  }, [food]);
-  // console.log("Iam popular", popularItems);
 
-  //finding recommended items
-  useEffect(() => {
     const recommendedItems = food.filter((item) => item.IsRecommended);
     setRecommendedItems(recommendedItems);
   }, [food]);
-  // console.log("iam remomoc", recommendedItems);
+
+  //finding recommended items
+  // useEffect(() => {}, [food]);
 
   return (
     <AppContext.Provider value={{popularItems, recommendedItems}}>

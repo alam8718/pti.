@@ -1,5 +1,7 @@
+
 import Banner from "./components/Banner/Banner";
 import Food from "./components/Food/Food";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
         <Banner />
         <Food />
       </div>
+        <Footer />
     </>
   );
 }

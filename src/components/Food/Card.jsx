@@ -3,8 +3,8 @@ import React from "react";
 function Card({item}) {
   return (
     <>
-      <div className="flex flex-col gap-3">
-        <div className=" w-[125px] md:w-[203px] h-[165px] md:h-[270px] rounded-2xl overflow-hidden shadow-md shadow-gray-800 ">
+      <div className="flex flex-col gap-3 justify-center items-center ">
+        <div className="mx-10 w-[120px] md:w-[203px] h-[165px] md:h-[270px] rounded-2xl overflow-hidden shadow-md shadow-gray-800 ">
           <img
             src={item.ImageUrl}
             alt="food items"
@@ -12,7 +12,7 @@ function Card({item}) {
           />
         </div>
         <div>
-          <h1 className="text-[#667079] text-md text-center">{item.Name}</h1>
+          <h1 className="text-[#667079] text-md text-center ">{item.Name}</h1>
         </div>
       </div>
     </>
