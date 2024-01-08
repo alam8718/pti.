@@ -1,5 +1,16 @@
 import {createContext, useContext, useEffect, useState} from "react";
 
+//  importing all the food images
+import Cake from "./images/foodImages/Cake.jpg";
+import ChickenFry from "./images/foodImages/ChickenFry.jpg";
+import FriedRice from "./images/foodImages/FriedRice.jpg";
+import GarlicBread from "./images/foodImages/GarlicBread.jpg";
+import burger from "./images/foodImages/burger.jpg";
+import Pizza from "./images/foodImages/Pizza.jpg";
+import Pasta from "./images/foodImages/Pasta.jpg";
+import Cappuchino from "./images/foodImages/Cappuchino.jpg";
+//  importing all the food images end
+
 const AppContext = createContext();
 
 export const AppProvider = ({children}) => {
@@ -13,8 +24,7 @@ export const AppProvider = ({children}) => {
       Id: "1ac400fd-98bd-46ee-b4e8-d2f983f2bbc2",
       Name: "Cake",
       Price: 11,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\Cake.jpg",
+      ImageUrl: {Cake},
       IsPopular: true,
       IsRecommended: true,
     },
@@ -22,8 +32,7 @@ export const AppProvider = ({children}) => {
       Id: "38332e95-7f66-45af-829b-c51b3d23caba",
       Name: "Chicken Fry",
       Price: 25,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\ChickenFry.jpg",
+      ImageUrl: {ChickenFry},
       IsPopular: true,
       IsRecommended: true,
     },
@@ -31,8 +40,7 @@ export const AppProvider = ({children}) => {
       Id: "39487b87-09e0-4e6c-acfa-6ac907e0742a",
       Name: "Fried Rice",
       Price: 9,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\FriedRice.jpg",
+      ImageUrl: {FriedRice},
       IsPopular: true,
       IsRecommended: false,
     },
@@ -40,8 +48,7 @@ export const AppProvider = ({children}) => {
       Id: "a3ef9e36-c7ee-48c5-99e2-6f966157e116",
       Name: "Garlic Bread",
       Price: 24.75,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\GarlicBread.jpg",
+      ImageUrl: {GarlicBread},
       IsPopular: true,
       IsRecommended: true,
     },
@@ -49,8 +56,7 @@ export const AppProvider = ({children}) => {
       Id: "1280cb1b-9115-45c5-babd-601febd462de",
       Name: "Burger",
       Price: 10.99,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\burger.jpg",
+      ImageUrl: {burger},
       IsPopular: true,
       IsRecommended: false,
     },
@@ -58,8 +64,7 @@ export const AppProvider = ({children}) => {
       Id: "14f0a9d0-49f9-4020-a656-e23b7ac59216",
       Name: "Pizza",
       Price: 8.5,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\Pizza.jpg",
+      ImageUrl: {Pizza},
       IsPopular: true,
       IsRecommended: true,
     },
@@ -67,8 +72,7 @@ export const AppProvider = ({children}) => {
       Id: "f6fdc153-052a-4eab-8b7d-bb1478d2179c",
       Name: "Pasta",
       Price: 3,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\Pasta.jpg",
+      ImageUrl: {Pasta},
       IsPopular: true,
       IsRecommended: true,
     },
@@ -76,8 +80,7 @@ export const AppProvider = ({children}) => {
       Id: "2b1bca6f-f7d6-4854-86dd-126db70776a2",
       Name: "Cappuchino",
       Price: 3,
-      ImageUrl:
-        "http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\Cappuchino.jpg",
+      ImageUrl: {Cappuchino},
       IsPopular: true,
       IsRecommended: true,
     },
@@ -99,6 +102,7 @@ export const AppProvider = ({children}) => {
         }
       } catch (error) {
         console.log(error);
+        setFood(allFood);
       }
     };
     fetchData();
