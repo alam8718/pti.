@@ -29,13 +29,13 @@ To run this project locally or integrate it into your environment, follow these 
    npm run dev
 
 ## Technologies used:
-  1.HTML
-  2.CSS
-  3.JavaScript
-  4.React
-  5.Tailwind CSS
-  6.React Form
-  7.React Icons
+  1. HTML
+  2. CSS
+  3. JavaScript
+  4. React
+  5. Tailwind CSS
+  6. React Form
+  7. React Icons
 
 
 
