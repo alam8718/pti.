@@ -9,4 +9,4 @@ as the api is http type so by the netlify server iss getting blocked as for that
 
 ✨Live Demo
 Experience pti. in action! 
-## Visit the live demo here: [pit.(https://ptiii.netlify.app/)]
+## Visit the live demo here: [pit.](https://ptiii.netlify.app/)
